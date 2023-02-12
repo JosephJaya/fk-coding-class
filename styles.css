@@ -1,11 +1,27 @@
 /*C.1-8*/
-.inspirational-verse {
-    text-align: center;
-    background-color: #DC3F45;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-right: 2rem;
-    margin-left: 2rem;
-    margin-top: 5rem;
+.insperational-verse {
+style="color: #1cceff; 
+  background-color: blueviolet; 
+    padding-top: 40px;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    padding-bottom: 40px;
+    border-radius: 2.5rem; 
+}
+
+.cocomelon {
+style="background-color: #66c0ff;
+padding-top: 40px;
+    margin-left: 17rem;
+    margin-right: 17rem;
+    padding-bottom: 40px;
+    border-radius: 10rem;
+}
+
+.concon {
+  style="background-color: #66c0ff;
+  margin-left: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 6px;
     border-radius: 10px;
 }
