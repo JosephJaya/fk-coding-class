@@ -63,7 +63,7 @@
             <!-- C.1-4 -->
             <p style="color: aquamarine; background-color: #0080FF;padding: 2px;">This is where the verses will go. this is showing the line break from de last line. and now were using a second line break.</br> hi (: i'm cool yee. yeeeeeeeeeeeeeeeee :D *o* this so cool yoyalbeary!!!!!!!!!!!!!!!!!!</br> hi *U* 😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁</p>
             <!-- C.2-1 -->
-            <!-- <input type="submit" value="Click this button to add a verse!" onclick="addVerse()"> -->
+             <input type="submit" value="Click this button to add a verse! 😁😁😁😁hi" onclick="addVerse()">
         </header>
     </div>
 </section>
@@ -115,15 +115,17 @@
 
 <script>
     // H.2-1: Create a global variable to hold the number of verses we have on our page
-
+   var number_of_verses = 0
     function addVerse() {
+      number_of_verses = number_of_verses + 1
         // H.2-2: Increment the number of verses we have on our page
-        printTheNumberOfVerses();
+      printTheNumberOfVerses();
         printOddOrEven();
     }
 
     function printTheNumberOfVerses() {
         // H.2-3: log statement should print the total number of verses
+      console.log(number_of_verses)
         console.log("This should print the number of verses there are")
     }
 
