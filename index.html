@@ -64,6 +64,22 @@
             <p style="color: aquamarine; background-color: #0080FF;padding: 2px;">This is where the verses will go. this is showing the line break from de last line. and now were using a second line break.</br> hi (: i'm cool yee. yeeeeeeeeeeeeeeeee :D *o* this so cool yoyalbeary!!!!!!!!!!!!!!!!!!</br> hi *U* 😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁😁</p>
             <!-- C.2-1 -->
              <input type="submit" value="Click this button to add a verse! 😁😁😁😁hi" onclick="addVerse()">
+          <div style="text-align: center; margin-bottom: 60px;">
+            <input type="submit" value="Submit" onclick="addVerse()">
+            <br>
+            <H3> TESTS FOR HOMEWORK 3 </H3>
+            <input id="test1" type="submit">
+            <br>
+            <input id="test2" type="submit">
+            <br>
+            <input id="test3" type="submit">
+            <br>
+            <input id="test4" type="submit">
+            <br>
+            <input id="test5" type="submit">
+            <br>
+            <input id="test6" type="submit">
+        </div>
         </header>
     </div>
 </section>
@@ -114,6 +130,32 @@
 </html>
 
 <script>
+  // Tests for H.3 DO NOT TOUCH
+    randomNumber = Math.floor(Math.random() * 100)
+    document.getElementById("test1").value = `This button should log: please show content and reference ${randomNumber}`;
+    document.getElementById("test1").onclick = function () {
+        showVerseContentAndReferenceWhenButtonClicked(`show-${randomNumber}`);
+    }
+    document.getElementById("test2").value = `This button should log: please hide content and reference ${randomNumber}`;
+    document.getElementById("test2").onclick = function () {
+        hideVerseContentAndReferenceWhenButtonClicked(`hide-${randomNumber}`);
+    }
+    document.getElementById("test3").value = `This button should log: make content ${randomNumber} visible`;
+    document.getElementById("test3").onclick = function () {
+        toggleVerseContentVisibility(`verse-content-${randomNumber}`, "hidden");
+    }
+    document.getElementById("test4").value = `This button should log: make content ${randomNumber} hidden`;
+    document.getElementById("test4").onclick = function () {
+        toggleVerseContentVisibility(`verse-content-${randomNumber}`, "visible");
+    }
+    document.getElementById("test5").value = `This button should log: make reference ${randomNumber} visible`;
+    document.getElementById("test5").onclick = function () {
+        toggleVerseReferenceVisibility(`verse-reference-${randomNumber}`, "hidden");
+    }
+    document.getElementById("test6").value = `This button should log: make reference ${randomNumber} hidden`;
+    document.getElementById("test6").onclick = function () {
+        toggleVerseReferenceVisibility(`verse-reference-${randomNumber}`, "visible");
+    }
     // H.2-1: Create a global variable to hold the number of verses we have on our page
    var number_of_verses = 0
     function addVerse() {
